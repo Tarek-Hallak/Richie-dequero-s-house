@@ -6,7 +6,7 @@ body {
   padding: 20px;
   background-color: #292929;
   border: 2px solid #557c3e;
-  border-bottom:0 ;
+  border-bottom: 0;
 }
 #logo-img {
   background: url("/images/restaurant-logo_large.png") no-repeat;
@@ -107,11 +107,11 @@ body {
   box-shadow: 0px -5px 10px 1px #d1e4c6;
 }
 #menu-tile {
-  background: url("/images/menu-tile.jpg") no-repeat;
+  background: url("/images/test.jpg") no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url("/images/specials-tile.jpg") no-repeat;
+  background: url("/images/test2.png") no-repeat;
   background-position: center;
   width: 100%;
 }
@@ -133,39 +133,39 @@ body {
 /*-------------End Home page------------------------------------------*/
 
 /*-------------Start footer-----------------------------------------*/
-.panel-footer{
+.panel-footer {
   background-color: #222;
   border: 2px solid #557c3e;
-  border-top:0 ;
-  margin-top:15px ;
+  border-top: 0;
+  margin-top: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.panel-footer div.row{
+.panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours ,#address{
+#hours,
+#address {
   line-height: 2em;
 }
-#hours span,#address span{
+#hours span,
+#address span {
   font-size: 2em;
   color: #284915;
-  text-shadow:1px 2px #0e0000;
+  text-shadow: 1px 2px #0e0000;
 }
-#address p{
-   color: #557c3e;
-   line-height: 1.8em;
-  
+#address p {
+  color: #557c3e;
+  line-height: 1.8em;
 }
-#testimonials{
+#testimonials {
   font-style: italic;
 }
-#testimonials :nth-child(2){
+#testimonials :nth-child(2) {
   margin-top: 25px;
 }
 
 /*-------------End footer-----------------------------------------*/
-
 
 /*------------ Start Media--------------------------------------------*/
 @media (min-width: 1200px) {
@@ -255,7 +255,7 @@ body {
     color: #557c3e;
     text-shadow: 1px 1px 1px #1c2b14;
     font-style: italic;
-    font-size: .8em;
+    font-size: 0.8em;
     margin-top: -15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -266,17 +266,10 @@ body {
     margin-top: 20px;
     padding: 0;
   }
-  #menu-tile,
-  #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
 }
 
 @media (max-width: 479px) {
   #menu-tile,
   #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
   }
 }
