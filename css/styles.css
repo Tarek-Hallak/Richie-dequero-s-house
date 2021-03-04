@@ -1,11 +1,12 @@
 body {
   color: #fff;
-  background-color: #03062550;
+  background-color: #84848b;
 }
 #header-nav {
   padding: 20px;
-  background-color: #3f3f3f;
+  background-color: #292929;
   border: 2px solid #557c3e;
+  border-bottom:0 ;
 }
 #logo-img {
   background: url("/images/restaurant-logo_large.png") no-repeat;
@@ -15,7 +16,6 @@ body {
 }
 
 .navbar-brand {
-  margin-top: 15px;
   padding-left: 30px;
 }
 
@@ -23,7 +23,7 @@ body {
   font-family: "Lora", serif;
   color: #557c3e;
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.6em;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000000;
   margin-top: 0;
@@ -83,15 +83,95 @@ body {
   clear: right;
   margin: 0;
 }
-/*--------------end header----------------*/
+/*-------------End header-----------------------------------------*/
 
+/*-------------start Home page---------------------------------------*/
 .container .jumbotron {
   box-shadow: 0 0 50px #557c3e;
   border: 2px solid #557c3e;
 }
+#menu-tile,
+#specials-tile,
+#map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  color: #557c3e;
+  border: 2px solid #557c3e;
+  overflow: hidden;
+}
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
+  box-shadow: 0px -5px 10px 1px #d1e4c6;
+}
+#menu-tile {
+  background: url("/images/menu-tile.jpg") no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url("/images/specials-tile.jpg") no-repeat;
+  background-position: center;
+  width: 100%;
+}
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #223319;
+  color: #fff;
+  opacity: 0.8;
+}
+/*-------------End Home page------------------------------------------*/
 
-/*---------Media-------------------------------*/
+/*-------------Start footer-----------------------------------------*/
+.panel-footer{
+  background-color: #222;
+  border: 2px solid #557c3e;
+  border-top:0 ;
+  margin-top:15px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours ,#address{
+  line-height: 2em;
+}
+#hours span,#address span{
+  font-size: 2em;
+  color: #284915;
+  text-shadow:1px 2px #0e0000;
+}
+#address p{
+   color: #557c3e;
+   line-height: 1.8em;
+  
+}
+#testimonials{
+  font-style: italic;
+}
+#testimonials :nth-child(2){
+  margin-top: 25px;
+}
+
+/*-------------End footer-----------------------------------------*/
+
+
+/*------------ Start Media--------------------------------------------*/
 @media (min-width: 1200px) {
+  .navbar-brand {
+    margin-top: 15px;
+  }
   #nav-list a {
     margin-top: 15px;
     font-size: 20px;
@@ -101,7 +181,7 @@ body {
     height: 675px;
     margin-bottom: 10px;
   }
-  /*------end Home------------------------------*/
+  /*-----end Home-----*/
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -114,14 +194,14 @@ body {
   .navbar-brand {
     margin-top: 0px;
   }
-  /*------end header--------------------------*/
+  /*------end header-----------*/
 
   .container .jumbotron {
-    background: url("/images/jumbotron_992.jpg") no-repeat;
+    background: url("/images/jumbotron_992.jpg");
     height: 560px;
     margin-bottom: 10px;
   }
-  /*------end Home-----------------------------*/
+  /*------end Home--------------*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -141,20 +221,20 @@ body {
     font-size: 5vw;
   }
   .navbar-brand span {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .navbar-brand img {
-    height: 2em;
+    height: 1.5em;
   }
   .navbar-header button.navbar-toggle {
-    padding: 1vw;
+    padding: 2vw;
   }
 
   #collapsable-nav a {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   #collapsable-nav a span {
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-right: 5px;
   }
 
@@ -163,7 +243,7 @@ body {
     background-color: #3f3f3f;
     text-shadow: 1px 1px 1px #000000;
     color: #557c3e;
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: block;
     margin: 5px 15px;
     padding: 10px;
@@ -175,16 +255,28 @@ body {
     color: #557c3e;
     text-shadow: 1px 1px 1px #1c2b14;
     font-style: italic;
-    font-size: 1em;
+    font-size: .8em;
     margin-top: -15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-
   /*------end header-------------------*/
 
   .container .jumbotron {
     margin-top: 20px;
     padding: 0;
+  }
+  #menu-tile,
+  #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  #menu-tile,
+  #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
   }
 }
